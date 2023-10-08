@@ -1,0 +1,74 @@
+.whole2
+{
+
+    background-image:url('https://as1.ftcdn.net/v2/jpg/06/20/60/30/1000_F_620603097_9gGKtJXGYbBhAZL4e18aMjrQOzjX4GRO.jpg') ;
+    background-size:cover;
+    width:100vw;
+    height:100vh;
+}
+
+.button1
+{
+    padding:2px;
+}
+
+.whole1
+{
+     background-color:black;
+
+}
+
+
+.whole
+{
+    background-image:url('https://www.avikalp.com/cdn/shop/products/MWZ3022_wallpaper1.jpg?v=1653192951');
+    background-size:cover;
+    height:150vh;
+    width:100vw;
+}
+.image
+{
+   width:100px;
+   height:100px;
+
+}
+
+.image1
+{
+     background-color:white;
+     border-radius:10px;
+     padding:5px;
+     margin:15px;
+}
+.head1
+{
+     text-align:center;
+     color:white;
+}
+
+.button2
+{
+    background-color:black;
+    color:white;
+    margin:15px;
+}
+
+.detailed-card {
+    background-image: url('https://t4.ftcdn.net/jpg/03/71/87/57/240_F_371875794_qJP9ybzoJgMHsI3HEoxTSlzSuJUnC1Vt.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+.head{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style:italic;
+    color:white;
+}
+.content{
+    background-color:white;
+    color:black;
+    padding:30px;
+}

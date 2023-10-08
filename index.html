@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="total.css">
+</head>
+<body >
+    <div id="section1">
+        
+            <div class="whole2 d-flex flex-column justify-content-end">
+                <div class="whole1" >
+                    <h1>
+                        Happy Meals
+                    </h1>
+                    <p>
+                        Discover the best foods over the 1,000 restaurants 
+                    </p>
+                    <button class="button1" onclick="display('sectionfavourites')">Book Now</button>
+        
+                </div>
+                
+            </div>
+
+    </div>
+
+
+
+    <div id="sectionfavourites">
+        <div class="whole">
+            <div>
+                <h1 class="head">Happy Meals</h1>
+                <div class="image1 d-flex flex-row" onclick="display('sectionbiriyani')">
+                    <div class="heading1">
+                        <h1>Biriyani </h1>
+                        <p>
+                            biriyani is derived from persian word.biriyani is derived from persian word.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://media.istockphoto.com/id/1410130688/photo/mutton-biryani-served-in-a-golden-dish-isolated-on-dark-background-side-view-indian-food.webp?b=1&s=170667a&w=0&k=20&c=bMljotvBlBxg-GaL3qGBF9pwwppuBg-JvUi_Ti4gO6c=" class="image">
+                    </div>
+                </div>   
+                    
+                    <div class="image1 d-flex flex-row" onclick="display('sectionvegbiriyani')">
+                        <div class="heading1">
+                            <h1>Veg biriyani </h1>
+                            <p>
+                                veg biriyani is the mixture of all ingrediants.veg biriyani is the mixture of all ingrediants.
+    
+    
+                            </p>
+                        </div>
+                        <div>
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHsAuQMBEQACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAQIDBAUABwj/xABAEAACAQMCAgcEBQoGAwAAAAABAgMABBEFEiExBhMiQVFhcRQygZEVFlKSoQcjM0RTVGLB0fAlNDVCcuEkk7H/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQMCBAUG/8QALxEAAgICAgICAQIEBgMAAAAAAAECEQMSITEEURNBIhRhBTJx8CNCUoGRoRXB4f/aAAwDAQACEQMRAD8APW0HTzzto/uioal9hn1e0791i+4KNQ2O+rmmH9Vi+4KNRbHfVrTP3WL7go1DZnfVnSz+qxfcFGobCHotpZ/VYvu0aj2Kt30R0to2xbRjh4UUw2PMOlWkxabfYhACnwqkJN8GJJGJFF1sqJ3scVR9GD1HQug9g9okk8QdyOJNc9ylzZXhfRp/UXSP3ZaPy9ha9CjoPpA/Vko/L2Fr0L9StJ/dk+VH5ewtejvqVpP7snyo/L2PZeipfdC9MWElIEB9KPy9haf0eb65p6WN20ae7ngK3B2Jqgp6G9FrS9t1muIwxbxFZk23Q1SC49DdJxxtY/lSp+xbDG6F6Qf1WP5U6fsLRBL0G0kg4t0HwpfkvsLQGdMujFvpcRltgABW4Sd0Zkl2BDLg1YwR440ALsWgD6aaovs2JSAWgBwoA6gDqAGS+4fSgEeT/lCUe0qfM04djl0CWn/5+D/mKq+jH2e/aP8A5KP0qEejbLlaoQhoAbSFZ1Ayrf8A6BvSkxo8e6Xj/ED6U8ZqQf8AQAf4ZF6Vn/MJhaa0ZEoAa1AWAn5SP9Ok+FOP8w30eTPzqxMjA40ASYoA+ln51F9mxtIBwNAC5pgNJxSYGRdaqbe+jg5BzzqDyVKjDdM05GBiJyOVWs2jyzp+czKfOnDscugSsf8AOwnu3iq/RNdnvWjkGxi9KjHooy4XUHBYZp2jJxIoAi61NxAYE+FK0IbJcxxe+4FJyS7HZXvJke3YqwPDuotNGkeRdLTm/NagOQfdACPo2IeVZf8AMD6C41owNoARuRoBAL+UX/T5PhTj2afR5M3fVkYYwc6BD6APpOR1HMioWUoge5ROZFKwofFOknukUWFEuRTERytgGkwBPpIzkF+rO5OKsK5chmSK+kdKkljaC57Mg4GtY52qHDkG+ljrduNjd+avF8lGRaDpKzaZdXDj9GchsVxeZ5Tw5I1/udni4I5INPsOui+t28lmkMkirMowQTXXGSatHHOEoNxZ2tzvHcxSxTgLniM8MVzZnJSTTIyXJRn6bWaSvaglnCZ3Cms/BN5Ch0W10395LLNOAAcBWOKlinLf8hRdlHpZrzTXhgsmL7TzU99LNLeXA3b4RodHJdSvLXbcYQDlx51WEmlR1YYOuSzf9HoCGlmUMedP5JHQoRIdCvVtrk20Q2gVvZ9icFYT3OovaxB2IK1pTJvGO0zWY747Yzkiqp2TcaNVvCtGQF/KJlrBwOPCnHsH0eVdTI5ICN8qpaRmmxfY5h/to3Q9JDvZpPs0bINWeyTa/btymX71c1stSKE+swsf0w+9S5HSLmn6zbDB60fOtJ0Jo1l1iAjO9fnRsZ1IrjW7YIe2B8aGwowZtXieQqXWRTzGc1GUtezDVA3ql3YxXDTRrxPDhWVlx9pi3gjNlufaQDtKLzy3CtxzQHHJGfRpr0gsrbo7LbxOOs3ruQ8CRw414+fFlzeTf0z3MGkEuegbfVIDrW6ORwmASVOONep4kZQxfmcnmzhLJwG+nTWOq2EghnMki8NpbLAnlXneblyRycdGIRxSxSf2gdvujF6LosgjwQCVDYbB7zWo+QowWyPH1b+jO1LTRplzJFJLLHKDgCFshuGe6rQySlyHQtjpZmnhI1B43Y5wedKXk/Gm9LoqotU7DfRtRhs1aKW43NHzYgDPnVMOb5Y7VR2Y3aLN70ls+qKdYDVtWVVIFfpe3ju2nV+PrW9HVD2Q6/6WGVOrjy3pW44vZOU19FnoXqs0d67zoRG3jVGkuiXLPR11e3aMEuBw8aNjOpja1cWV4hDyIfLNJyNJMFJrG1BYxMo9KnLIWjiswrxvZJu121NCeyN6akXt0P2fwpUw4ObR9QX3klz8a69onFUiCWwmhGZ5OrH8bYNG8RqEmQrdiA9maRj5HhWHO+kUWP2x7a3eYwjsB68axrZu0jZ0KC71WAyLbXE5VsMwPZFcufJHE/ylRbG4NdBvoejDT7K5mubOMmRPcByxHhXl+V5eNx45FkimvxRharZLZzSXd1bqFZQUiUfo18SO6p+PkTjX2eRmw5I9oHekV08htBaWLhX3SQMBkOp7vgRxrvxpct8CxwcFf0zNvdHnh6i41GaCEz5KgHLADhyrcM6dxgnwdGL5G/xRq6N9X7O0c38DvcEdnawKCsuU52qbZmOLPlyVLhe/o1k0O5S3kudLsVt5XXd1l0zrtAPcF458q5/z6zPj0v7Z6MfFwx4i27A3ULvWIbmW6e9mdgAjyRSEjHgc91ehDHgaUaFLw6FsdfJVOtkJuA53s3HcpHd6GlLx9W2ujz8uCUXx0T/S0Mt/bNeLKyoMFojhj8an8cnBqNX+5PHVrboPTa6fLYE6Y1ussibg87793D++NeNtkhKpt1+3B7+DFjSuCB/Wo106xghngje4mbLurdn0GeNdeDLLLkcoydI6XCMY/kgcleFJ1V42jRu88xXsYpzcbuzhy4oXwqNSfRLq32tFJGQy7lOOYrGPzMeVE5eNOJ1tctbriWY7h4cKcuejcYpLku6RfdbdFZZiw7gWpTtRHCKbCN7VHA7I9c1HdldEYupqlrxQ/DNai7DWujHa6WZSpTtefdVtaMbXwUM+lb4MUFfSPpw1xI0WkwrbQZ/SsuZW/kv/ANoqznUa7A6WZp3JdixPexya2lRpstR6NdyX1vZmE9ZOwVCORz51P5oaOafQpQknTCiLoLNa9JbGFojeac53SPyAA5hscuOPX51wf+Shk8eUk6kgeOpUF2jae2m9ZZC76u1hmaSGONMbozx7bHmQcjA8Ae+vK8ryo54KceX9/wDwpDFLamW7rUFVcblAXi3HkK8xucmj0YYChqaiaJuuJRHUHKJuLeVVxWpcj1VcAnqd4ot0sorNgkMjNBwC9WCTw8O/lXsQWz2cu0c78eGtNAjrEYWd1D73C54HIB9a9HDZJwUf5Qt6KQafp9jBf3CiW+mHWDK7vZ1PLA7jgjJ58T3Co58yi/jj/uy2LxXkjuzU6Y9JLebTorXTpFEOMSK6EM/Hnnhgc6lhxPJLlUax43iblLs8+v72R0Kq/VR44onI+tenDBFCnmbQONEz3O2NcR8DnuH94q8mkjz5K5V9Fy2E+4tA7h18QCAPQ1CTjVNB8eOMeeDXm1BvoqAOmxkLBiFwahonPg86VLI3Bmd1jXke/wBpkdlA29ZISPhmqUsbqj04OUl+Ttkqy5EazuTtb3c54VlfhbiX2bVM1ZNYuGWI7yyxdkLjurmx4lFv9zc8ku/RoWvst0wOoIsaFThyeA9fOrflF0mcXm5p/EpYOXZmSpFARLFPgDk6nINXjLbhnRG9FkqrLUmu6pDahkKyxcusQk49fCn+ni2P9V9GZNrV3K2XUk+lbWCKMyzv0VZryaY5Kle44raxpE5ZWyLefFq1qT2ZZiX2i7jieQRh3C725Lk4yax0m6NPs9DsPyfI+l7NSuUguY5WYSwdoOhxgHOPD8a8uf8AEkpbRVqujfxyfBv9HtJTSARPqq3UaLmMNFt6s/8ALJrzvI8qGVXGNNlY7/yvk2I7vfK6KymNBjeTxY4448q8h+7Oj46Sb7M3UNWNvGd0kSR55MN2fhWsUJT47OmGGL7KE93JYadNeXd2jdc3/jq0IwgI7wOJ7+eO6uyGGE2ko0/vk0o7Tr6BqfVLi9tXist7KnEsWyR5Kvd38M11rDCE05FpzSXBnW7y31tOXgEkaRmQsBzA7sd54H5V0uKhJU+bOSeaEFT+yhfaNPb2EkiLG3EbVgBLc8A5xxq+PyYyyKN/8k5pa9Fa315oF2yxHAGwhOAPd3+gq0/FU3aYYvIcYJMivtYS4OeqlVhwwcf1q2PHp9mZ5FJcIynlluW2RxkZOMtyq7nGKtnJJyfCQ0wtAjoxZiW4MBwPlU9lNpmeYrksWzC2QyjkQAEJzxz/ANcqxJbcHLnuVRX2WbiOY2aTK3b4nGfeHnWYyjtq+i36WPx0kUHBSJiy7WYjgOAz41TtksW0XqR3HYkRlY+dOPKOsnhkdCNhOB48BWJRT7Gi9b4aFtsQH2gGJJ9KjLh8sKpcEK3gSHqniWMNyABBPlV1Hm07CMnWr6LdhcezXcbW5LI5CTREZVh31WLb4ZLNBJbIg1K6hs9RuIIWzGj4XvwPCt6scJrVWQfSceOIHypaM1cRn0lF4fhRqxXEMZOj02n37PaQQ30ZBHUT4WRPAjPA+o+VckpfNjuEqNQrHL/EVhRp6WkC+2a/fQx3ZlB98sQOH5oAd5GOA592a8/9NvcFwkvRV+Qr/wAOIOX0kr3Ek7sQrOw6nbjaCTwx8eVZikj5+U3HI5Luzfs7bU7WO3tpm23MwAyGJChgTzOSWFcOX4ZzbXS/v6PqsE3LEnIS+iuZ5A/VsywQgOpQ9uThwxzPImp4nCK9W/8Ao6rpUijJe2ctsjalI0txF2QJBhVbOMgd5ro+PJs/jXDJym+iGwkt2glmTKhF6ncAAZG2gk/iBTyqVqL+3f8AQmndkemT3psLbUyg9jYOJFYhQoXOT8xwPfmujL48VJwff0ef5Mvkh+PaM6/1Oe0upGtgXiQkuikYA45FbhgjNJS7ZvFkk4LYp3FvaajdzxxW+yYqpyy7drcjgeXCqxlkxRUpS4KfjJ0Z9/orxTq+W7RG4MeJGeY7+6r4/JUomXCnaYtxDHYS9coVuR55xyGKUJPJHUHFLko3csckUjBm3ZBGBwWr44tNEclNURLMhiHXRh3BBODjdW6afBzY4/lyaAunnjkhXaNqdgBQOHhUGlGmdy6K0yMsqRTAMQoLeR/lVL4tEnH8rGNZSNFK7E9WGGDjJ48OX986FkVpLsKrsrBN7CJB2yQNxGB/3VLpWzO1Fq39otyCVJk3FQMcMDxqUlGfA4yJ7uJSoZ5gnMsxPKt4YT9Cnkj0iKGdFDLYqzN3zPzHoK6OI8k1GU++iD2QkkkEk8SaW5X4zjZ8Pdo+QPjGew/wij5A+I9m1C39oiIIyRXhYZ6uj0Zx4Bae81HTZM2t06ry2McivVTU1U1ZxTxpdFO315obv2mW2/Pbw5dWD8c55MOHwNZfi4JR1o5H40N965Nu36ZwM6Pc3a9ZHjq+utnUD1Kls8DiuN/wnF/lk1/2dsc0lGtbJp+k7XtuYWaxuVeQBltr3YQmePB9hz5VFfwiUZXCf/PsqvIxpcxZBp9xDGjRySSQW8jNm1eEzoDngxKkjkO6jL4fk8NRtr7TSH+oxSIrlNMtVWNdTtUgy69UpJxu4ZyT5D0qenkN7Sxu/f8AQayY6pPgy9R6QW11ogsgESKC34orDEbABBgjmCOIrsWDIsid3yQTjQOwTtNZTt1uRtPA8cjvrocEpoxta4DbSr5H0+xuptQsus2bTctlW7uyRzzkY+Ge+vH8jG1knCMX/T/2Vg/xUpFjUY7e8uIZbkid41JjkR8q2fE+FSxTnCLS6ZbRN2YmtTx3Nuwij2bgY1RcZKj/AHEefcOfCuzBCUXy7/voUkqB+9sY4IoDcXFu0G84CyDL+BAHca9CGTZtRuzglNN0yjqNr7PcyLAm5EPugcceIq2JucVY5JRdpEi25SBZE4SkqSWPceYp6ycqrgHNVwWLt7YBmFxGsgAAIBO7HLdisww5OFJcDlkjXBX+kYUhaPezbhhiq863+m/LazHy2uin7WqtlEZj3FjVfijXJN2xsl/cyH3wueeK3GMY9INfZB7xy7FiO80xpIN+juixy6VHLJgPIS2D4Z4fgK83yc7jkpHo+PiThZefQfs4qK8gt8BC+iOOS0/1CF8JH9DSfZ/Cl86NfEeilMD1rgQ2DHSSz6s7wOyeVel489kc00B84w3GuxEWV2IrZkglRG94AjzpiK5iQHsjb6UUJjxcXMYxHdzgeG84rSbMNI46jqA/XpSPBgp/lQDQ36Rvv26/+pf6UxVQo1TUFxtnQekS/wBKHXoBX1fUWXa9zkYxjYuKzrHuh7S9jDq2o4wLrA5YEa/0p6x9Bs/YxtS1A87yT4AD+VMRA1zcP71xKfjTtipETZPvFj6mnbCkMwByGKBDd1ArE3U0gsaWoCzg2eFaSsUpUEeia1Nb7YZHPV8h5VDyPEU1suy/j+U48SDKCaRlDBsg99ePOKTo9aMrVltZ3HfU3FGkx3tLeFT1RuzYl1EA/mBn+Kqxwezkc/QOa5dz53yZZORFdmGEUSnIFLyRSdynI8a6okWUHlxWzJC0vnWqM2RmUeNFCIzKPGnQhpkFMQhkFArGmQUCELigBpenQCb6KAQvRQDC9OhWML06FY0vTENLUCsbuzwFaSMuVE8QPfVEid2WoxTs0gy6M3UghMchyo5ZryfOgtrR6vhzetM3Ypt7AIMnNefKLS5O1STLO2X9mahaKWWtLMN1ao0Z4geNds00zijVDNSs98Z4Z4UQnTFJWAOr2EsErNB45Kmu7HJPs5pJrowZJiGIcFW8DVtSTkRGUmnQWMMnnToWw3fTozsIX86KCxOsooNhDJToVib6AsQvTFYm+gBpc0BYhY0CsaWoFYhbwp0Z2FCs3jWqM22TRRYrQtS0iDhTs0oly1gMjYArE5pFIwsNejOjyzMVYbV768jy86R6fj46QcWmkwWq+6CcV5U8jkdS4J+oj+yKmb2PKdM1t7Rt0T48q9+WOzgUl9BhpmvRagpR9qv6865p4nHlGk7J7vT4LtTuAP8AEKwpyiacUwW1bowrFjHtYeddUPIa7IzwpgteaDJCezlPKuqOZM55YGujMls54s5wRVdkyUoyRXKyDmrfKtcGOfQwsRzB+VFC2E3+tFBsji/n+FFBshN/nRQbHbqKFsdknuNFBZ2GPIU6C2LsY0UhUxwh8aLHqSCMCizVEiqPCix0XLaynnP5uJj58gKy8kY9s1HHKXSNa00dUIN1Mo/hTj+NQl5H+lF4+P8A6maMT29vhbdFB8Sck1BuUuzoUYx6DroyjxWe+Q9qTjk15fku5nXjVR5NkzLjBdc+tc2prgh9rh/ar86NX6NcHhTLJCezxWvq3BM+fhma7HR3RB7DMjDwqUoUdMcifRpWvSHUbb3Lh2XwY5qTxwfaN/I0akXS2RwBcQjwJBqb8dfRRZfZHc63Zyodoy+O+nHDJClkQNXlw88xJGB5eFdcUoo5ZNtktsrysEQfOpydFYJvg3V0ZDb79yFsZxXP87ui/wAKowb2II5RYhkd+K6ovjs5Zx/YhW17G5gPTFDnyCx8ckXVZ4BfwrexjT0jjCR/t/CjYNP2OW3Lc+FLYax2NaMgkc6d2ZcaE2fCiw1ZxGObfKnYVQoZBzpWwVFq2uUjYFIkz4sM1iSb+ysWvpFqbVgi4HGprFZuWVIq+3Xdy4WIE55AVX41HlkfnbdIJtD0WTKzXsm0jjg1yZs6XEEdeHDN/lJhWbwRRhUmyAOQNefq27aO18FaS7GxiJMsR41tQ56EZW5v25+ddGv7GOPYKvXqo+fKN2oAyBg+NME2QIzY5mpySOiEmxWY+NJI0xm4nvpmbZyu3jQK2PWeUDg7ClSN7Mcb26C4E8mPWlpH0P5JV2NS4lY8ZGPrQ4qgU5DZZ5cgdYcVqKRmU5exBNJj3zRSGpyGvNJ9s01FGZTl7GGWT7Z+dOkZ3l7E6x/tGnSM7yOLt4mig2ZwYkcTSZpNjSx8aBNil2A4E0JBJtIcgy/HjxrbJXZv2R6qMNHhT44rkycvk7cfC4JHvrr9s1Cxw9Dlln7IGvbls5mf51RQj6JPLP2RPczkcZX+db0j6Jyyz9kHXS/tH+9WtULeXs//2Q==" class="image">
+                        </div>
+                        
+                    </div>
+    
+    
+    
+                            
+                        <div class="image1 d-flex flex-row"  onclick="display('sectionpulkha')">
+                         <div class="heading1">
+                            <h1>pulka </h1>
+                            <p>
+                               pulka is very soft flatbread commonly made in indian householdIt is a Hindi term for puffing. 
+                            </p>
+                          </div>
+                          <div>
+                            <img src="data:image/jpeg;base64,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" class="image">
+                          </div>
+                        
+                        </div>
+                   
+                   
+                   
+                <div class="image1 d-flex flex-row" onclick="display('sectionpanner')">
+                    <div class="heading1">
+                       <h1>panner butter masala </h1>
+                       <p>
+                           this panner butter masala recipe is a rich.this panner butter masala recipe is a rich
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://media.istockphoto.com/id/1249211465/photo/traditional-indian-dish-with-chickpeas-and-curry.jpg?s=612x612&w=0&k=20&c=z06Pi0z8wYeCSvNAHBgXMNDe8ox47cmwDOtxr_cLgCo=" class="image">
+                    </div>
+                   
+                </div>
+    
+    
+            
+            <div class="image1 d-flex flex-row" onclick="display('sectionfriedrice')">
+                <div class="heading1">
+                   <h1>fried rice </h1>
+                   <p>
+                    this panner butter masala recipe is a rich. this panner butter masala recipe is a rich
+    
+    
+                    
+                   </p>
+               </div>
+               <div>
+                   <img src="https://cdn.pixabay.com/photo/2021/05/31/01/10/fried-rice-6297407_640.jpg" class="image">
+               </div>
+               
+            </div>
+    
+    
+    
+        
+          </div>
+            <button class="button2">Next</button>
+                  
+          </div>
+        </div>
+
+    </div>
+      
+    
+    
+    
+
+
+    
+<div id="sectionbiriyani">
+    
+    <div class="detailed-card">
+        <h1 class="head">Biriyani</h1>
+        <div class="div-card-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://as1.ftcdn.net/v2/jpg/06/32/40/68/1000_F_632406840_YZrbTvfjfRb7hoMtme97eqd4YRT82fMB.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://t4.ftcdn.net/jpg/04/90/19/23/360_F_490192375_qg0In7Wbt4dh5zx18yEazvzPYydN2YOO.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://as1.ftcdn.net/v2/jpg/05/98/88/70/1000_F_598887061_kYP8mej0xOqMs4yCvgxrQbCQU57gUXXl.jpg" alt="Third slide">
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="content d-flex flex-column justify-content-end">
+                <div>
+                <h1>Biriyani</h1>
+                <p>Biryani is a mixed rice dish originating among the Muslims of South Asia. It is made with spices, vegetables, rice, and usually some type of meat. In some cases without any meat, and som </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div id="sectionvegbiriyani">
+
+    <div class="detailed-card">
+        <h1 class="head">Veg Biriyani</h1>
+        <div class="div-card-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://as2.ftcdn.net/v2/jpg/06/17/17/01/1000_F_617170164_hAuDnbkLrzBAm6EGpBW8NNkQho3Jrfg6.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://t4.ftcdn.net/jpg/04/90/19/23/360_F_490192375_qg0In7Wbt4dh5zx18yEazvzPYydN2YOO.jpg" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://t4.ftcdn.net/jpg/05/96/87/75/240_F_596877566_3GoPy7QT6SMyPN8dWXbLQDdwhWaZH2EU.jpg" alt="Third slide">
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="content d-flex flex-column justify-content-end">
+                <div>
+                <h1>Veg Biriyani</h1>
+                <p> VegBiryani is a mixed rice dish originating among the Muslims of South Asia. It is made with spices, vegetables, rice, and usually some type of meat. In some cases without any meat, and som .Vegetable Biryani is an aromatic rice dish made with basmati rice, mix veggies, herbs & biryani spices. This easy Veg Biryani is a total crowd pleaser! You will love this for everything from busy night meals to holiday family dinners.29-Apr-2023
+
+                </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<div id="sectionpulkha">
+
+    <div class="detailed-card">
+        <h1 class="head">Pulkha</h1>
+        <div class="div-card-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://www.seema.com/wp-content/uploads/2022/06/Phulka-768x512.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2Fphotos%2Fchapati.html&psig=AOvVaw2TR_X3zIvikl_uWDUMrgez&ust=1696618020539000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCHn-XI34EDFQAAAAAdAAAAABAE" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://www.shutterstock.com/image-photo/healthy-vegan-food-indian-tandoori-pulka-1212637159" alt="Third slide">
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="content d-flex flex-column justify-content-end">
+                <div>
+                <h1>Pulkha</h1>
+                <p>Phulka or Phulka Roti is a soft melt-in-the-mouth whole wheat Indian flatbread, that is a daily meal staple in many Indian homes. Top this thinly rolled Indian bread with homemade aromatic ghee, and you have the best accompaniment to go with any vegetarian or non-vegetarian curry dishes.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<div id="sectionpanner">
+    <div class="detailed-card">
+        <h1 class="head">Panner Better masala</h1>
+        <div class="div-card-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1077980738/photo/green-peas-or-matar-paneer-curry-recipe-served-in-a-bowl-selective-focus.jpg?s=612x612&w=0&k=20&c=SShuhVPIWBpUaJXqvdWqjPrh0AqsR6VR68GInZlyw6Y=" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1551881192-002e02ad3d87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://as2.ftcdn.net/v2/jpg/04/75/65/21/1000_F_475652107_Sx73qgHWljGylX5KRyDFeE46ftX0A4EE.jpg" alt="Third slide">
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="content d-flex flex-column justify-content-end">
+                <div>
+                <h1>Panner BUtter Masala</h1>
+                <p>paneer is an Indian cheese that's made from curdled milk and some sort of fruit or vegetable acid like lemon juice. There are some distinct traits that make Paneer the cheese that it is: It's an unaged cheese. It's a soft cheese. It doesn't melt.t is claimed that the first paneer butter masala dish was conjured up in Delhi's famous Moti Mahal restaurant chain; it is created for the British population of the time who had a penchant for Indian curry but could hardly handle the spice.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<div id="sectionfriedrice">
+
+    <div class="detailed-card">
+        <h1 class="head">Fried Rice</h1>
+        <div class="div-card-container">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2021/05/31/01/10/fried-rice-6297407_640.jpg" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/premium-photo/tawa-pulao-pulav-pilaf-pilau-is-indian-street-food-made-using-basmati-rice-vegetables-spices-selective-focus_466689-70903.jpg?w=740" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/premium-photo/broken-wheat-daliya-upma-served-bowl-selective-focus_466689-44570.jpg?w=740" alt="Third slide">
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="content d-flex flex-column justify-content-end">
+                <div>
+                <h1>Fried Rice</h1>
+                <p>Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish.Fried rice is a dish of cooked rice that has been stir-fried in a wok or a frying pan and is usually mixed with other ingredients such as eggs, vegetables, seafood, or meat. It is often eaten by itself or as an accompaniment to another dish</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+   <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>
