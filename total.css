@@ -75,5 +75,6 @@
 .view
 {
  width:400px;
-margin:auto;
+ margin:auto;
+ height:400px;
 }
